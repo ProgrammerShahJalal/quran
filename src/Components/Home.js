@@ -7,9 +7,10 @@ import { MdDarkMode } from "react-icons/md";
 
 import Header from './Header'
 import Artical from './Artical'
-import Lodding from './Lodding';
 import { langugeName } from './LanguageName';
 import { TabTitle } from './TabTitle';
+import loadingImg from './images/loading.gif';
+import { NavLink } from 'react-router-dom';
 
 
 const Home = () => {
@@ -49,7 +50,7 @@ const Home = () => {
 
       const FilterSura = data.filter(sura=>{ 
         var suraName = sura.transliteration.toLowerCase().replace(/[-' ]/g, "");
-        return suraName.startsWith(value) 
+        return suraName.includes(value) 
       })
       setFilterData(FilterSura)
     }
@@ -89,6 +90,13 @@ const Home = () => {
     }, [theme]);
 
     
+    if(isLodding) {
+      return (
+        <div id='loading'>
+          <img src={loadingImg} alt='loading animaiton' />
+        </div>
+      )
+    }
 
     return (
     <main>
@@ -96,9 +104,9 @@ const Home = () => {
 
       <nav className={nabVar?"scrollNavber":"navigation-Bar"}>
         <div className='nav-element'>
-          <span className='page-logo'>
-            Holy Quran
-          </span>         
+          <NavLink to='/' className='page-logo'>
+          <h4> Holy Quran</h4>
+          </NavLink>         
         </div>
 
 
@@ -139,7 +147,6 @@ const Home = () => {
           placeholder='search surah name.....' 
           onChange={ifChanged} 
         />
-       <FaSearch className='icon' /> 
        </div>
      </header>
 
@@ -160,10 +167,6 @@ const Home = () => {
       <br />
       <br />
     </section>
-
-      {/*------------------data Lodding Section----------------- */}
-      {isLodding && <Lodding /> }
-      {isLodding && <Lodding /> }
 
   </main>
   )
