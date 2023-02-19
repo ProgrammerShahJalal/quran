@@ -138,11 +138,6 @@ body{
   width: 20rem;
 }
 
-.blogs, .inner-blogs-left {
-  display: flex;
-  align-items: center;
-}
-
 /*--------------nav Logo--------------*/
 .page-logo{
   font-size: 18px;
@@ -277,20 +272,22 @@ section{
 }
 
 
-.blogs{
+.blogs {
   height: 70px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius:5px;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border-radius: 5px;
   padding-bottom: 5px;
   background-color: var(--box-background-color);
   margin: 10px;
   /* box-shadow: 1px 3px 9px 1px #00000057; */
-  box-shadow: var(--box-background-shadow)
-} 
+  box-shadow: var(--box-background-shadow);
+}
+
 .inner-blogs-left{
   display: flex;
+  align-items: center;
 }
 .ayat-number{
   display: flex;
