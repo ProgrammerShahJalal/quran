@@ -1,18 +1,15 @@
 import React from 'react'
+import alquranImg from './images/bismillah.svg';
 
 import '../App.css'
 const Header = () => {
   return (
-    <>
-    <h1 className='title'>Holy Quran</h1>
+    <div className='hero'>
+    <div className="my-container">
 
-      <div className='description-box'>
-      <p className='description'>The Quran is glad tidings, for whom? Only for the true 
-       <strong> it is our constitution</strong> </p>
-      </div>
-
-     
-    </>
+    </div>
+   <img src={alquranImg} alt='bismillah' />
+    </div>
   )
 }
 
