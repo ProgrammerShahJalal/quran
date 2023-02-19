@@ -277,6 +277,7 @@ section{
   height: 70px;
   display: flex;
   justify-content: space-evenly !important;
+  align-content: space-evenly !important;;
   align-items: center !important;
   border-radius: 5px;
   padding-bottom: 5px;
