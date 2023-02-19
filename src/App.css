@@ -288,7 +288,6 @@ section{
 
 .inner-blogs-left{
   display: flex;
-  align-content: space-evenly;
   align-items: center;
 }
 .ayat-number{
