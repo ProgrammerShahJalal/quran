@@ -284,7 +284,7 @@ section{
   background-color: var(--box-background-color);
   margin: 10px;
   /* box-shadow: 1px 3px 9px 1px #00000057; */
-  box-shadow: var(--box-background-shadow);
+  /* box-shadow: var(--box-background-shadow); */
 }
 
 .inner-blogs-left{
@@ -317,6 +317,7 @@ section{
   font-weight: bold;
 }
 .sura-translation-name{
+  padding-top: 2em;
   font-size: 10px;
   font-weight: bolder;
   color: var(--box-tans-colore)
