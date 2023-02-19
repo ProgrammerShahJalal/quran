@@ -308,6 +308,8 @@ section{
  
 }
 .sura-name{
+  display: grid !important;
+  align-content: space-around !;
   font-family: 'Ubuntu', sans-serif;
   line-height: 0.9;
   font-weight: bold;
