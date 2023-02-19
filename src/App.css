@@ -84,6 +84,7 @@
 
 body{
   background: var(--page-background);
+  padding-bottom: 5rem;
 }
 
 
