@@ -123,6 +123,7 @@ body{
 }
 
 .hero{
+  display: inline;
   text-align: center !important;
   margin-top: -2rem;
   padding-top: 50px;
@@ -133,7 +134,13 @@ body{
   height: 25rem;
 }
 .hero img{
+  display: inline;
   width: 20rem;
+}
+
+.blogs, .inner-blogs-left {
+  display: flex;
+  align-items: center;
 }
 
 /*--------------nav Logo--------------*/
