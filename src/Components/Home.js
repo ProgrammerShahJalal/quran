@@ -16,9 +16,9 @@ import { NavLink } from 'react-router-dom';
 const Home = () => {
 
     TabTitle("Holy Quran")
-    //initial language is bangla 
+    //initial language is english 
     const[selectLangusge,setSelectLanguage] = useState(
-        localStorage.getItem('selectLanguage') || 'bn'
+        localStorage.getItem('selectLanguage') || 'en'
       );
 
 
