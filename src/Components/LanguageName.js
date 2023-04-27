@@ -1,11 +1,11 @@
 export const langugeName = [
     {
-        name: "Bengali",
-        value: "bn"
-    },
-    {
         name: "English",
         value: "en"
+    },
+    {
+        name: "Bengali",
+        value: "bn"
     },
     {
         name: "Urdu",

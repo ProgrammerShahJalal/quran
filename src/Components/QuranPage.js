@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { IoArrowUndoCircleSharp } from "react-icons/io5";
+import { CiHome} from "react-icons/ci";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 import { useLocation, useNavigate, Link } from "react-router-dom";
@@ -82,7 +82,7 @@ const QuranPage = () => {
     <main className="quranPageBody">
       <nav className={nabVar ? "scrollNavber" : "navigation-Bar"}>
         {/*Re rendering Button for Go back Home page*/}
-        <IoArrowUndoCircleSharp
+        <CiHome
           onClick={() => navigation("/")}
           className="GotoHome"
         />

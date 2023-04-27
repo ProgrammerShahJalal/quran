@@ -148,6 +148,7 @@ body{
 }
 /* light and night mode----------------- */
 .lightmoode{
+  cursor: pointer;
   color: var(--darke-light-mode);
   margin-top: 6px;
   font-size: 23px;
@@ -205,10 +206,10 @@ body{
   font-family: 'Philosopher', sans-serif;
   line-height: 22px;
 }
-.description-box p{
-  /* padding: 0px 30px;
-  margin: 23px 0px; */
-}
+/* .description-box p{
+  padding: 0px 30px;
+  margin: 23px 0px;
+} */
 
 /*-----------SearchBar------------*/
 .searchBar{
