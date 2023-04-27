@@ -1,11 +1,13 @@
 import React from 'react'
-import alquranImg from './images/bismillah.svg';
+import alquranImg from './images/quran.png';
 
 import '../App.css'
 const Header = () => {
   return (
-    <div className='hero'>
-   <img src={alquranImg} alt='bismillah' />
+    <div>
+      <div>
+   <img id='topImg' src={alquranImg} alt='Quran' />
+    </div>
     </div>
   )
 }
