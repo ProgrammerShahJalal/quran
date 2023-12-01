@@ -26,3 +26,7 @@ Feel free to explore the "Holy Quran" web app and embark on a journey of enriche
 <li>TailwindCSS</li>
 <li>Rest API</li>
 <li>JavaScript</li>
+<li>React Router Dom</li>
+
+
+

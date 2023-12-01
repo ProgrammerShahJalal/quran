@@ -25,7 +25,7 @@ const Home = () => {
     //fetch data with useFetch custom hook. This link is from npm
     const{
       data,
-      isLodding,
+      isLoading,
       error,
       filterDatra,
       setFilterData
@@ -90,9 +90,9 @@ const Home = () => {
     }, [theme]);
 
     
-    if(isLodding) {
+    if(isLoading) {
       return (
-        <div id='loading'>
+        <div id='loading'  style={{ backgroundColor: 'white', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <img src={loadingImg} alt='loading animaiton' />
         </div>
       )
@@ -167,7 +167,9 @@ const Home = () => {
       <br />
       <br />
     </section>
-
+<div className='text-center'>
+<p>All Rights Reserved by <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/ProgrammerShahJalal/'>Md Shah Jalal</a> </p>
+</div>
   </main>
   )
 }

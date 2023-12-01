@@ -18,7 +18,7 @@ const App = () => {
   
   if(isLoading) {
     return (
-      <div id='loading'>
+      <div id='loading'  style={{ backgroundColor: 'white', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <img src={loadingImg} alt='loading animaiton' />
       </div>
     )
